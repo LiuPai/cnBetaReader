@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="660.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.PageViewerController">
+  <children>
+    <VBox layoutX="0.0" layoutY="0.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="660.0">
+      <children>
+        <Label fx:id="fxTitle" alignment="CENTER" labelFor="$fxTitle" prefHeight="60.0" prefWidth="660.0" text="Label" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
+          <font>
+            <Font name="WenQuanYi Micro Hei" size="40.0" />
+          </font>
+        </Label>
+        <HBox prefHeight="20.0" prefWidth="660.0">
+          <children>
+            <Label fx:id="fxPushDate" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="200.0" text="Label" textAlignment="RIGHT" />
+            <Hyperlink fx:id="fxSource" alignment="CENTER" contentDisplay="CENTER" prefWidth="130.0" text="Hyperlink" textAlignment="CENTER" />
+            <Label id="fxClick" fx:id="fxReadCount" alignment="CENTER" prefHeight="20.0" prefWidth="130.0" text="Label" textAlignment="CENTER" />
+            <Label fx:id="fxCommentCount" prefHeight="20.0" prefWidth="200.0" text="Label" />
+          </children>
+        </HBox>
+        <ScrollPane prefHeight="620.0" prefWidth="660.0">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="619.0" prefWidth="645.0">
+              <children>
+                <HBox layoutX="0.0" layoutY="-1.0" prefHeight="163.00009999999747" prefWidth="660.0">
+                  <children>
+                    <WebView fx:id="fxIntroduction" prefHeight="163.0" prefWidth="493.0" />
+                    <Rectangle fx:id="fxTopic" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="163.0" stroke="BLACK" strokeType="INSIDE" width="159.0" />
+                  </children>
+                </HBox>
+                <WebView layoutX="0.0" layoutY="163.0" prefHeight="456.0" prefWidth="645.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </ScrollPane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
